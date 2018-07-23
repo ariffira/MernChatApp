@@ -1,0 +1,26 @@
+{
+  "name": "mernchatapp",
+  "version": "1.0.0",
+  "description": "Chat app using mongodb, express, react , node and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "concurrently": "*",
+    "cors": "^2.8.4",
+    "express": "*",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "*",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  },
+  "author": "MD Ariful Islam",
+  "license": "ISC"
+}
