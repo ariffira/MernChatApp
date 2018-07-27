@@ -17,8 +17,7 @@ class App extends Component {
         super(props);
         this.state = {
             modal: false,
-            chatLists: [],
-            chatId: {}
+            chatLists: []
         };
     }
 
@@ -28,6 +27,10 @@ class App extends Component {
                 const chatLists = res.data;
                 this.setState({ chatLists });
             });
+    }
+
+    sendChatId(i) {
+        return <ChatDetail chatId={i} />;
     }
 
   render() {
@@ -41,15 +44,15 @@ class App extends Component {
               <ListGroup>
                   { this.state.chatLists.map(chatList =>
                       <ListGroupItem tag="a" key={chatList._id}>
-                          <Link to={`/chatDetail/${chatList._id}`}>
+                          <Link to={`/chatDetail`}>
                               {chatList.roomTitle}
+                              {this.sendChatId(chatList._id)}
                           </Link>
-                          <Route path={`/chatDetail/${chatList._id}`} component={ChatDetail} chatId={chatList._id} />
+                          <Route path={`/chatDetail`} component={ChatDetail}/>
                       </ListGroupItem>
                   )}
               </ListGroup>
           </Router>
-          <h3>Chat details:</h3>
       </div>
     );
   }

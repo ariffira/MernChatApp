@@ -52,7 +52,7 @@ router.post('/create', (req, res) => {
 
 /**
  * @route   GET api/chats/detail/:id
- * @desc    Add new chat msg with chatRoom Id, username, message
+ * @desc    Get Chat Details
  * @param   {String} chatId
  */
 router.get('/detail/:id', (req, res, next) => {
