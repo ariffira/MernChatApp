@@ -5,11 +5,11 @@
 ## Quick Start
 
 ```bash
-# Install dependencies for server
+# Install dependencies for server: expressjs
 npm install
 
-# Install dependencies for client which is not fully functional yet
-npm run client-install
+# Install dependencies for client: ReactJS
+cd client and npm i
 
 # Run the client & server with concurrently 
 npm run dev
@@ -25,7 +25,7 @@ npm run client
 ## Tools needed
 
 ```bash
-> Node js installed
+> Node js installed with expressjs
 > Mongodb and mongoose
 > Socket.io
 > Reactjs on client side with ReactStrap for using bootstrap, axios
