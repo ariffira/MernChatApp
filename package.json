@@ -16,7 +16,7 @@
     "express": "*",
     "express-handlebars": "^3.0.0",
     "mongoose": "*",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
     "nodemon": "*"
