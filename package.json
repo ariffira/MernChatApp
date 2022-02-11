@@ -14,7 +14,7 @@
     "concurrently": "*",
     "cors": "^2.8.4",
     "express": "*",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "mongoose": "*",
     "socket.io": "^2.1.1"
   },
